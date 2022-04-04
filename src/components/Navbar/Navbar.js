@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="link-container">
         <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
-          to="/home"
+          to="/"
         >
           Home
         </NavLink>
