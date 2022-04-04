@@ -1,8 +1,10 @@
 import React from "react";
 import Images from "../Images/camera.png";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex mx-auto mt-20">
@@ -32,7 +34,10 @@ const Home = () => {
           <div class="mx-auto w-96 border-t border-gray-400"></div>
         </div>
         <div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-52 my-6">
+          <button
+            onClick={() => navigate("./review")}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-52 my-6"
+          >
             See All Reviews
           </button>
         </div>
