@@ -2,11 +2,11 @@
 
 ## Assignment-9
 
-# Live Website :
+# Live Website : https://cameramania.netlify.app/
 
 This is the live website link. Click it your will see a wonderful website!!
 
-# Code link :
+# Code link : https://github.com/programming-hero-web-course-4/product-analysis-website-MrRonnie
 
 This link will take you to my codes. how i make this project what components i use.\
 
