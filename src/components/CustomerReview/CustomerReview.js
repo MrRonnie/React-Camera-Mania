@@ -1,7 +1,7 @@
 import React from "react";
 
-const CustomerReview = (props) => {
-  const { name, img, title, rating } = props.review;
+const CustomerReview = ({ review }) => {
+  const { name, img, title, rating } = review;
   return (
     <div className="max-w-sm mx-auto my-5 rounded overflow-hidden shadow-lg">
       <div className="">

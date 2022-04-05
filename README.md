@@ -1,3 +1,22 @@
+# Project Name Camera Mania
+
+## Assignment-9
+
+# Live Website :
+
+This is the live website link. Click it your will see a wonderful website!!
+
+# Code link :
+
+This link will take you to my codes. how i make this project what components i use.\
+
+# Bullet Point
+
+- Project about Camera and review used Tailwind.
+- Used React Route with Rechart.
+- Used custom hook for review and use same hook for home review.
+- Destructuring active link set 404 route and many more.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
