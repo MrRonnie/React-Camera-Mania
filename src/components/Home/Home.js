@@ -2,9 +2,12 @@ import React from "react";
 import Images from "../Images/camera.png";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import useReviews from "../../hooks/useReviews";
+import CustomerReview from "../CustomerReview/CustomerReview";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [reviews, setReviews] = useReviews();
   return (
     <>
       <div className="flex mx-auto mt-20">
@@ -18,10 +21,7 @@ const Home = () => {
             <br /> what you see. A real camera will help you stand out from the
             crowd
           </p>
-          <button
-            onClick={() => navigate("/")}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5"
-          >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5">
             Book Now
           </button>
         </div>
@@ -36,10 +36,19 @@ const Home = () => {
         <div class="py-4">
           <div class="mx-auto w-96 border-t border-gray-400"></div>
         </div>
+        {/* Home review here */}
+        <div>
+          <div className="review-container grid-cols-3">
+            {reviews.slice(0, 3).map((review) => (
+              <CustomerReview key={review.id} review={review}></CustomerReview>
+            ))}
+          </div>
+        </div>
+
         <div>
           <button
             onClick={() => navigate("/review")}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-52 my-6"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 my-6"
           >
             See All Reviews
           </button>
