@@ -18,7 +18,10 @@ const Home = () => {
             <br /> what you see. A real camera will help you stand out from the
             crowd
           </p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5">
+          <button
+            onClick={() => navigate("/")}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5"
+          >
             Book Now
           </button>
         </div>
@@ -35,7 +38,7 @@ const Home = () => {
         </div>
         <div>
           <button
-            onClick={() => navigate("./review")}
+            onClick={() => navigate("/review")}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-52 my-6"
           >
             See All Reviews
